@@ -1,11 +1,48 @@
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+   {% capture title %}
+    {%- if page.share-title -%}
+      {{ page.share-title | strip_html | xml_escape }}
+    {%- elsif page.title -%}
+      {{ page.title | strip_html | xml_escape  }}
+    {%- else -%}
+      {{ site.title | strip_html | xml_escape }}
+    {%- endif -%}
+  {% endcapture %}
 
-  <meta name="author" content="{{ site.author.name }}" />
+  {% capture description %}
+    {%- if page.share-description -%}
+      {{ page.share-description | strip_html | xml_escape }}
+    {%- elsif page.subtitle -%}
+      {{ page.subtitle | strip_html | xml_escape }}
+    {%- else -%}
+      {%- assign excerpt_length = site.excerpt_length | default: 50 -%}
+      {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length | strip }}
+    {%- endif -%}
+  {% endcapture %}
+  
+ 
+  <title>{{ title }}</title>
+
+  {% if site.author %}
+  <meta name="author" content="{{ site.author }}">
+  {% endif %}
+
+  <meta name="description" content="{{ description }}">
+
+  {% if site.mobile-theme-col %}
+  <meta name="theme-color" content="{{ site.mobile-theme-col }}">
+  {% endif %}
+
+  {% if site.keywords %}
+  <meta name="keywords" content="{{ site.keywords }}">
+  {% endif %}
+
+  {% if site.rss-description %}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
+  {% endif %}
   
   {% if page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}">
@@ -67,12 +104,6 @@
   
 
 <link rel="icon" type="image/png" href="/favicon.ico" >
-
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-<meta name="theme-color" content="#ffffff">
 
   <!-- Twitter summary cards -->
   <meta name="twitter:card" content="summary" />
