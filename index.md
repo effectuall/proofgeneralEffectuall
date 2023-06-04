@@ -1,14 +1,15 @@
 ---
 layout: page
 title: Proof General
-subtitle: A generic Emacs interface for proof assistants.
+subtitle: A virtual 3D Learning Platform- Physics.
+published: true
 ---
 
-## What is Proof General?
+## What is Effectuall?
 
-**Proof General** is a generic interface for *proof assistants* (also
-known as *interactive theorem provers*), based on the extensible,
-customizable text editor [Emacs](https://www.gnu.org/software/emacs/).
+**Effectuall** provides an effective and powerful 3D learning platform for Interactive Physics Simulations. It introduces a teaching methodology that uses technology as access points for guiding students in science
+### Effect of Visual Learning - [Effectual Learning] (https://effectuall.github.io/).
+# Explore. Evaluate. Envision.
 
 Proof General has been developed at the
 [LFCS](http://wcms.inf.ed.ac.uk/lfcs/) in the
