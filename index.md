@@ -34,7 +34,7 @@ Use mouse
 * to zoom and pan around in the 3D space
 * to click on the microscope parts for the description
 
-### Check out the simulation sample [circular motion 3D](https://effectuall.github.io/) interactive and  more.
+### Check out the simulation sample [circular motion 3D](https://effectuall.github.io/Simulations/Mechanics_Circular_Motion.html) interactive and  more.
 
 {% include embed.html url= "https://www.youtube.com/embed/GOgbrGa_86Y" %}
 Use controls
@@ -47,7 +47,7 @@ Use mouse
 * to zoom and pan around in the 3D space
 * to click on the microscope parts for the description
 
-### Check out the interactive 3D simulation of [force on a current carrying conductor in a magnetic field ](https://effectuall.github.io/) and  more.
+### Check out the interactive 3D simulation of [force on a current carrying conductor in a magnetic field ](https://effectuall.github.io/Simulations/Magnetism_Force_on_a_Current_Carrying_Conductor.html) and  more.
 
 {% include embed.html url= "https://www.youtube.com/embed/2gCtgqUEBd4" %}
 
