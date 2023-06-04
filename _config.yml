@@ -1,81 +1,99 @@
-# --- General options --- #
+###########################################################
+### Welcome to Effectuall!
+### This config file is meant for settings that affect the entire website. 
+###########################################################
 
-# url is the full website URL
-# baseurl is the website's URL without the hostname
-
-# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-#url: "https://effectuall.github.io"
-#baseurl: ""
-
-# If you are building a GitHub project page then use these settings:
-#url: "http://effectuall.github.io/proofgeneralEffectuall"
-#baseurl: "/proofgeneralEffectuall"
-
-# Of course don't forget to change the username and projectname to YOUR username and project
-
+############################
+# --- Required options --- #
+############################
 # Name of website
 title:Effectual Learning
 
 # Short description of your site
 description: Interactive Physics 3D Simulations
 
+# Your name to show in the footer
+author: E.P. Sajitha
 # --- Navigation bar options --- #
 
-# List of links in the navigation bar
-navbar-links:
-  Home: ""
-  Resources:
-    - News: "news"
-    - Features: "features"
-    - Download: "download"
-    - GitHub repo: "https://github.com/ProofGeneral/PG/"
-    - Documentation: "doc"
-    - Screenshots: "screenshots"
-    - Development: "devel"
-    - Publications: "pubs"
-    - Related: "links"
-  About:
-    - About PG: "about"
-    - Authors: "AUTHORS"
+###############################################
+# --- List of links in the navigation bar --- #
+###############################################
 
-# Image to show in the navigation bar - image must be a square (width = height)
+navbar-links:
+  About Me: "aboutme"
+  Resources:
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: "https://deanattali.com"
+
+################
+# --- Logo --- #
+################
+
+# Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-#round-avatar: true
+round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
 #title-img: /path/to/image
 
-# --- Footer options --- #
 
-# Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
-author: E.P. Sajitha
+#####################################
+# --- Footer social media links --- #
+#####################################
+
+# Select the social network links that you want to show in the footer.
+# Uncomment the links you want to show and add your information to each one.
+social-network-links:
   name: The PG dev team
   email: "effectuallearning@gmail.com"
-  #facebook: yourname  # eg. daattali
+  #facebook: sajithaep
   github: effectuall
+  youtube: Effectual Learning
   twitter: sajithaep   # eg. daattali
   linkedin: Sajitha E.P  # eg. daattali
   #stackoverflow: yourlink  # eg. "3943160/daattali"
  
-# Select which links to show in the footer
-footer-links-active:
-  rss: false
-  facebook: false #true
-  email: false #true
-  twitter: false #true
-  github: true
-  linkedin: false
-  stackoverflow: false
+###########################
+# --- General options --- #
+###########################
+
+# Select which social network share links to show in posts
+share-links-active:
+  twitter: true
+  facebook: true
+  linkedin: true
+  vk: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
 url-pretty: "effectuall.github.io"
 # eg. "deanattali.com/beautiful-jekyll"
+
+# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
+excerpt_length: 50
+
+# Whether or not to show an excerpt for every blog post in the feed page
+feed_show_excerpt: true
+
+# Whether or not to show a list of tags below each post preview in the feed page
+feed_show_tags: true
+
+# Add a search button to the navbar
+post_search: true
+
+# Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
+edit_page_button: true
+
+# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
+# If this setting is off, then long sub-menu words might get cut off
+# See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
+navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
@@ -129,18 +147,18 @@ kramdown:
 # Default YAML values (more information on Jekyll's site)
 defaults:
   -
-    scope:
+   scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
       comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
-      path: "" # all files
+      path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
-      show-avatar: true
 
 # Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
 link-tags: false
