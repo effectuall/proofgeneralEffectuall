@@ -4,8 +4,8 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "https://effectuall.github.io"
-baseurl: ""
+#url: "https://effectuall.github.io"
+#baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://effectuall.github.io/proofgeneralEffectuall"
@@ -17,7 +17,7 @@ baseurl: ""
 title:Effectual Learning
 
 # Short description of your site
-description: Organize your proofs!
+description: Interactive Physics 3D Simulations
 
 # --- Navigation bar options --- #
 
@@ -46,13 +46,13 @@ avatar: "/img/avatar.png"
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
-author:
+author: E.P. Sajitha
   name: The PG dev team
-  #email: "effectuallearning@gmail.com"
+  email: "effectuallearning@gmail.com"
   #facebook: yourname  # eg. daattali
   github: effectuall
-  #twitter: yourname   # eg. daattali
-  #linkedin: yourlink  # eg. daattali
+  twitter: sajithaep   # eg. daattali
+  linkedin: Sajitha E.P  # eg. daattali
   #stackoverflow: yourlink  # eg. "3943160/daattali"
  
 # Select which links to show in the footer
@@ -67,7 +67,7 @@ footer-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "ProofGeneral.github.io"
+url-pretty: "effectuall.github.io"
 # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
