@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Proof General
+title: Physics Interactive 3D Simulations
 subtitle: A virtual 3D Learning Platform- Physics.
 published: true
 ---
